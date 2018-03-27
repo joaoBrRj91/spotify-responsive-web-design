@@ -1,0 +1,52 @@
+
+/*==================================================LAYOUT=====================================================*/
+/* Barra de navegação*/
+.img-logo{
+
+	height: 30px;
+	width: 132px;
+   /*Elementos span são inline por padrão ou seja ocupam o espaço do elemento interno.Precisamos definir como
+   block para que ele passe a ser definido por nossa altura e largura*/
+   display: block;
+   background: url('../img-spotify/spotify.svg') no-repeat;
+   /*A imagem de background irá ocupar o espaço do elemento(height e width fornecidos)*/
+   background-size: contain;
+   color: transparent;
+
+ }
+
+/*span.img-logo{
+
+	margin: 0;
+	margin-top: -5px;
+}
+*/
+
+
+nav.navbar-transparent{
+  padding: 15px 0;
+  background: rgba(0,0,0,0.6);
+  border: none;
+}
+
+
+.navbar-brand{
+  padding: 7px 15px; 
+}
+
+.divisor{
+
+  width: 1px;
+  height: 16px;
+  background: white;
+  margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #9bf0e1;
+}
+/*=====================================================TIPOGRAFIA================================================*/

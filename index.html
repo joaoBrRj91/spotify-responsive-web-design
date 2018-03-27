@@ -10,7 +10,7 @@
 
   <!-- Bootstrap -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css-spotify/estilo.css" rel="stylesheet">
+  <link href="css-spotify/estilo-spotify.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,16 +21,57 @@
     </head>
     <body>
 
-      <div class="container">
-         <div class="page-header">
-              <h1 class="lead">Spotify - Venha para essa comunidade</h1>
-         </div>
-      </div>
+     <section>
+       <header>
 
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- barra de navegação -->  
+        <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparent">
 
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="bootstrap/js/bootstrap.min.js"></script>
-    </body>
-    </html>
+          <!-- container da barra de navegação-->
+          <div class="container">
+
+            <!-- header da barra de navegação -->  
+            <div class="navbar-header">
+
+             <!-- Botão toogle para esconder ou exibir menu na resolução mobile -->  
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+
+              <span class="sr-only">alternar navegação</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+
+            </button><!-- /Botão toogle para esconder ou exibir menu na resolução mobile -->  
+
+            <a href="index.html" class="navbar-brand">
+              <span class="img-logo">Spotify</span>
+            </a>
+
+          </div><!-- /header da barra de navegação -->  
+
+          <!-- navbar menus -->
+          <div class="collapse navbar-collapse" id="barra-navegacao">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Premium</a></li>
+              <li><a href="#">Ajuda</a></li>
+              <li><a href="#">Baixar</a></li>
+              <li class="divisor" role="separator"></li>
+              <li><a href="#">Inscrever-se</a></li>
+              <li><a href="#">Entrar</a></li>
+            </ul>
+          </div> <!-- /navbar menus -->
+
+        </div> <!-- /header da barra de navegação -->  
+      </nav><!-- /barra de navegação -->  
+    </header>
+  </section>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
